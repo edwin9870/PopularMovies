@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_movie_review_author"
+        style="@style/reviewAuthorStyle"
+        android:drawableEnd="@drawable/ic_comment"
+        android:drawablePadding="@dimen/text_movie_review_author_drawable_padding"
+        android:drawableRight="@drawable/ic_comment"
+        tools:text="Movie Queen41"/>
+
+    <TextView
+        android:id="@+id/text_movie_review"
+        style="@style/bodyStyle"
+        android:layout_marginBottom="@dimen/text_movie_review_margin_bottom"
+        android:layout_marginTop="@dimen/text_movie_review_margin_top"
+        tools:text="There may be some fine performances in this movie,
+        but I honestly think the critics overrated this latest entry in the X-Men saga.
+        The performances of Wolverine and Prof. X by Hugh Jackman and Patrick Stewart are extraordinary."/>
+</LinearLayout>

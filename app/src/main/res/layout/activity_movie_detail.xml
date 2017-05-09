@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 android:fitsSystemWindows="true"
+                                                 tools:context=".activities.MovieDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_movie_detail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_movie_detail_collapsing_toolbar_layout_height"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/image_movie_backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                app:layout_collapseMode="parallax"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_detail_movie"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:theme="@style/PopularMoviesTheme"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_movie_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/viewBackgroundColor"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/linear_layout_movie_info_padding_left"
+            android:paddingRight="@dimen/linear_layout_movie_info_padding_right">
+
+            <TextView
+                android:id="@+id/text_movie_name"
+                style="@style/title1Style"
+                android:layout_marginTop="@dimen/text_movie_name_margin_top"
+                tools:text="The best movie ever"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/linear_layout_inner_movie_info_padding_top">
+
+                <TextView
+                    android:id="@+id/text_release_date"
+                    style="@style/bodyStyle"
+                    android:layout_weight="1"
+                    tools:text="April 13, 2030"/>
+
+                <TextView
+                    android:id="@+id/text_user_rating"
+                    style="@style/bodyStyle"
+                    android:layout_marginLeft="@dimen/text_user_rating_margin_left"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_star"
+                    android:drawablePadding="@dimen/text_user_rating_drawable_padding"
+                    android:drawableStart="@drawable/ic_star"
+                    tools:text="6.9"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_movie_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/viewBackgroundColor"
+            app:tabGravity="fill"
+            app:tabMode="fixed"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager_movie_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/view_pager_movie_detail_padding"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_button_add_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/floating_button_add_favorite_margin"
+        android:src="@drawable/ic_heart"
+        app:layout_anchor="@id/view_pager_movie_detail"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- activity_main.xml-->
+    <dimen name="progress_bar_loading_indicator_width">42dp</dimen>
+    <dimen name="progress_bar_loading_indicator_height">@dimen/progress_bar_loading_indicator_width</dimen>
+    <!-- end activity_main.xml-->
+
+    <!-- activity_movie_detail.xml-->
+    <dimen name="activity_movie_detail_collapsing_toolbar_layout_height">250dp</dimen>
+
+    <dimen name="linear_layout_movie_info_padding_left">15dp</dimen>
+    <dimen name="linear_layout_movie_info_padding_right">@dimen/linear_layout_movie_info_padding_left</dimen>
+
+    <dimen name="text_movie_name_margin_top">8dp</dimen>
+
+    <dimen name="linear_layout_inner_movie_info_padding_top">5dp</dimen>
+
+    <dimen name="text_user_rating_margin_left">15dp</dimen>
+    <dimen name="text_user_rating_drawable_padding">2dp</dimen>
+
+    <dimen name="view_pager_movie_detail_padding">15dp</dimen>
+
+    <dimen name="floating_button_add_favorite_margin">16dp</dimen>
+    <!-- end activity_movie_detail.xml-->
+
+    <!-- item_movie_list.xml -->
+    <dimen name="image_movie_poster_height">300dp</dimen>
+    <!-- end item_movie_list.xml -->
+
+    <!-- item_movie_review.xml -->
+    <dimen name="text_movie_review_author_drawable_padding">2dp</dimen>
+    <dimen name="text_movie_review_margin_bottom">15dp</dimen>
+    <dimen name="text_movie_review_margin_top">1dp</dimen>
+    <!-- end item_movie_review.xml -->
+
+    <!-- item_movie_trailer.xml-->
+    <dimen name="relative_layout_movie_thumbnail_height">250dp</dimen>
+
+    <dimen name="image_movie_thumbnail_height">250dp</dimen>
+
+    <dimen name="image_play_trailer_width">150dp</dimen>
+    <dimen name="image_play_trailer_height">@dimen/image_play_trailer_width</dimen>
+
+    <dimen name="text_trailer_name_margin_bottom">20dp</dimen>
+    <!-- end item_movie_trailer.xml-->
+
+</resources>

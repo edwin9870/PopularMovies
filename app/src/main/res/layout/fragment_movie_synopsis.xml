@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MovieSynopsisFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_synopsis"
+            tools:text="With Dom and Letty married, Brian and Mia retired and
+                the rest of the crew exonerated, the globe-trotting team has found
+                some semblance of a normal life. They soon face an unexpected challenge
+                when a mysterious woman named Cipher forces Dom to betray them all.
+                Now, they must unite to bring home the man who made them a family and
+                stop Cipher from unleashing chaos.2
+With Dom and Letty married, Brian and Mia retired and
+                the rest of the crew exonerated, the globe-trotting team has found
+                some semblance of a normal life. They soon face an unexpected challenge
+                when a mysterious woman named Cipher forces Dom to betray them all.
+                Now, they must unite to bring home the man who made them a family and
+                stop Cipher from unleashing chaos.3
+With Dom and Letty married, Brian and Mia retired and
+                the rest of the crew exonerated, the globe-trotting team has found
+                some semblance of a normal life. They soon face an unexpected challenge
+                when a mysterious woman named Cipher forces Dom to betray them all.
+                Now, they must unite to bring home the man who made them a family and
+                stop Cipher from unleashing chaos.4
+With Dom and Letty married, Brian and Mia retired and
+                the rest of the crew exonerated, the globe-trotting team has found
+                some semblance of a normal life. They soon face an unexpected challenge
+                when a mysterious woman named Cipher forces Dom to betray them all.
+                Now, they must unite to bring home the man who made them a family and
+                stop Cipher from unleashing chaos.5"
+            style="@style/bodyStyle" />
+
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>
